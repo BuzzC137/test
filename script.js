@@ -5,8 +5,7 @@
 
   function tick(){
     const now = new Date();
-    let target = new Date(`${SEASON_YEAR}-12-25T00:00:00-06:00`);
-    if(now > target) target = new Date(`${SEASON_YEAR+1}-12-25T00:00:00-06:00`);
+    const target = new Date(`${SEASON_YEAR}-01-01T00:00:00-06:00`);
     let diff = Math.max(0,target-now);
     const d = Math.floor(diff/86400000); diff%=86400000;
     const h = Math.floor(diff/3600000); diff%=3600000;
