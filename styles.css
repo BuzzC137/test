@@ -156,6 +156,34 @@
   }
   .prize .place{font-size:11px;color:var(--muted);letter-spacing:.14em;font-weight:900;text-transform:uppercase}
   .prize .icon{font-size:29px;margin-top:9px}
+  .reward-icon{margin-top:10px;display:flex;align-items:center;justify-content:center}
+  .point-icon{
+    width:34px;height:34px;border-radius:50%;
+    color:#fff;font-weight:1000;font-size:21px;line-height:1;
+    background:linear-gradient(145deg,#73cfff 0%,#238bd4 48%,#0e5b9e 100%);
+    border:2px solid #bfe9ff;
+    box-shadow:inset 0 0 0 3px rgba(10,63,112,.55),0 4px 14px rgba(57,163,229,.22);
+    text-shadow:0 1px 2px rgba(0,0,0,.45);
+  }
+  .dp-icon{width:46px;height:38px;position:relative;justify-content:flex-start}
+  .dp-star{
+    position:absolute;left:0;top:-2px;color:#ffd06a;font-size:26px;line-height:1;
+    text-shadow:0 0 10px rgba(255,196,93,.28);transform:rotate(-8deg);
+  }
+  .dp-box{
+    position:absolute;left:17px;top:10px;width:27px;height:21px;
+    border:2px solid #dce4ee;border-radius:3px;transform:skewY(-8deg);
+    background:linear-gradient(145deg,rgba(255,255,255,.12),rgba(255,255,255,.025));
+    box-shadow:inset 0 0 0 1px rgba(255,255,255,.04),0 4px 12px rgba(0,0,0,.28);
+  }
+  .dp-box:before{
+    content:"";position:absolute;left:5px;top:-6px;width:17px;height:8px;
+    border:2px solid #dce4ee;border-bottom:0;transform:skewX(-35deg);
+    background:rgba(255,255,255,.05);
+  }
+  .dp-box:after{
+    content:"";position:absolute;left:12px;top:0;height:100%;border-left:1px solid rgba(220,228,238,.45);
+  }
   .prize strong{font-size:21px;line-height:1.05}
   .prize small{color:var(--muted);font-size:11px}
   .p1{--prize-glow:rgba(255,196,93,.22);border-color:rgba(255,196,93,.28)}
